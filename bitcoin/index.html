@@ -1,30 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
-  </head>
-  <body>
-	<script>
-	function homePageLoading() {
-    	url = 'https://api.blockcypher.com/v1/btc/main';
-    	elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
-    	fonctionRequeteApi(url, elementID);
-     	 var xmlhttp = new XMLHttpRequest();
-    	  xmlhttp.onreadystatechange = function() {
-    	  if (this.readyState == 4 && this.status == 200) {
-       	 var myObj = this.responseText;
-      	  var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
-       	 document.getElementById("demo").innerHTML = jsonPretty;
-       	 }
-    	  };
-      xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
-      xmlhttp.send();
-		  }</script>
-	  <script type="text/javascript">homePageLoading();</script>
-    <div class="row">
+   <meta charset="utf-8">
+	  
+	  <title>BITCOIN CB</title>
+	 
+	  <script type="text/javascript" src="https://charlesben1.github.io/js/script.js"></script>
+	  
+         <meta name="description" content="Site Bitcoin IF Sofiane ayache"/>
+     
+	</head>
+<body>
+ 
+	<ul>
+  <li><a href="../../index.html">Home</a></li>
+  <li><a class="active" href="index.html">Bitcoin</a></li> 
+       </ul>
+	
+  <h1>REFERENCEMENT BITCOIN</h1>
+	<li a>
+	<div class="row">
 	<div class="col-lg-12 col-xs-6">
     	<pre>
         	<code id="demo" class="json kljs"></code>
     	</pre>
 	</div>
 </div>
-  </body>
+	
+	</li a>
+	
+	
+
+	
+</body>
 </html>
