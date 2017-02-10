@@ -3,6 +3,10 @@
   </head>
   <body>
     <script>
+	    function homePageLoading() {
+    url = 'apiUrl';
+    elementID = 'idDeVotreElementHtml';
+    fonctionRequeteApi(url, elementID);
     var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -13,7 +17,9 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open("GET", "http://bitcoin.mubiz.com/blockchaininfo", true);
 xmlhttp.send();
+}
 </script>
+	  <script type="text/javascript">homePageLoading();</script>
     <div class="row">
 	  <div class="col-lg-12 col-xs-6">
     	  <pre>
