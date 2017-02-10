@@ -5,7 +5,7 @@
 	<body>
 		<script>
 	function homePageLoading() {
-    	url = 'http://bitcoin.mubiz.com/address/bitcoin_address/';
+    	url = 'https://api.blockcypher.com/v1/btc/main';
     	elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
     	fonctionRequeteApi(url, elementID);
      	 var xmlhttp = new XMLHttpRequest();
@@ -16,7 +16,7 @@
        	 document.getElementById("demo").innerHTML = jsonPretty;
        	 }
     	  };
-      xmlhttp.open("GET", "http://bitcoin.mubiz.com/address/bitcoin_address/", true);
+      xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
       xmlhttp.send();
 		  }</script>
 		<div class="row">
