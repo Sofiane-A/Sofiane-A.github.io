@@ -5,7 +5,7 @@
 	<body>
 		<script>
 	function homePageLoading() {
-    	url = 'http://bitcoin.mubiz.com/block_hash/bitcoin_block_hash/';
+    	url = 'http://bitcoin.mubiz.com/info';
     	elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
     	fonctionRequeteApi(url, elementID);
      	 var xmlhttp = new XMLHttpRequest();
@@ -16,7 +16,7 @@
        	 document.getElementById("demo").innerHTML = jsonPretty;
        	 }
     	  };
-      xmlhttp.open("GET", "http://bitcoin.mubiz.com/block_hash/bitcoin_block_hash/", true);
+      xmlhttp.open("GET", "http://bitcoin.mubiz.com/info", true);
       xmlhttp.send();
 		  }</script>
 		<div class="row">
