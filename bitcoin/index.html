@@ -5,7 +5,7 @@
 	<body>
 		<script>
 	function homePageLoading() {
-    	url = 'https://api.blockcypher.com/v1/btc/main';
+    	url = 'http://bitcoin.mubiz.com/block_hash/bitcoin_block_hash/';
     	elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
     	fonctionRequeteApi(url, elementID);
      	 var xmlhttp = new XMLHttpRequest();
@@ -16,7 +16,7 @@
        	 document.getElementById("demo").innerHTML = jsonPretty;
        	 }
     	  };
-      xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
+      xmlhttp.open("GET", "http://bitcoin.mubiz.com/block_hash/bitcoin_block_hash/", true);
       xmlhttp.send();
 		  }</script>
 		<div class="row">
