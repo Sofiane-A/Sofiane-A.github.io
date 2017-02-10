@@ -5,7 +5,7 @@
 	<body>
 		<script>
 	function homePageLoading() {
-    	url = 'https://block.io/api/v2/get_balance/?api_key=BITCOIN';
+    	url = 'https://api.blockcypher.com/v1/btc/main';
     	elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
     	fonctionRequeteApi(url, elementID);
      	 var xmlhttp = new XMLHttpRequest();
@@ -16,7 +16,7 @@
        	 document.getElementById("demo").innerHTML = jsonPretty;
        	 }
     	  };
-      xmlhttp.open("GET", "https://block.io/api/v2/get_balance/?api_key=BITCOIN", true);
+      xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
       xmlhttp.send();
 		  }</script>
 		<div class="row">
