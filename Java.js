@@ -10,11 +10,3 @@
       xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
       xmlhttp.send();
     </script>
-    <a href="http://Sofiane-A.github.io/index.html">Main Page</a>
-    <div class="row">
-	<div class="col-lg-12 col-xs-6">
-    	<pre>
-        	<code id="demo" class="json kljs"></code>
-    	</pre>
-	</div>
-</div>
