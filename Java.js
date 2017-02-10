@@ -1,4 +1,3 @@
-<script>
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -16,4 +15,3 @@ xmlhttp.send();
     	</pre>
 	</div>
 </div>
-</script>
