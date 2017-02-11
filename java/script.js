@@ -1,5 +1,5 @@
-function homePageLoading(char apiUrl) {
-    url = apiUrl;
+function homePageLoading(var apiUrl) {
+    var url = apiUrl;
     elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
     fonctionRequeteApi(url, elementID);
 var xmlhttp = new XMLHttpRequest();
