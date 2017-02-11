@@ -1,4 +1,7 @@
-
+function homePageLoading(url) {
+    url = 'apiUrl';
+    elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
+    fonctionRequeteApi(url, elementID);
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -7,5 +10,5 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("demo").innerHTML = jsonPretty;
     }
 };
-xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main/info", true);
-xmlhttp.send();
+xmlhttp.open("GET", "url", true);
+xmlhttp.send();}
