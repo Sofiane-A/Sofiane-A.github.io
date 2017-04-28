@@ -12,9 +12,8 @@ xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
 xmlhttp.send();
 }
 
-function homePageLoading() 
+function homePageLoading(url) 
 {
-    url = "https://bitcoin.mubiz.com/blocks";
     elementID = "https://sofiane-a.github.io/bitcoin/index.html";
     fonctionRequeteApi(url, elementID);
 }
