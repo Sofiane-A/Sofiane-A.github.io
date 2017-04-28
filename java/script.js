@@ -8,7 +8,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("demo").innerHTML = jsonPretty;
     }
 };
-xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
+xmlhttp.open("GET", "https://bitcoin.mubiz.com/info", true);
 xmlhttp.send();
 }
 
