@@ -7,7 +7,7 @@
         {
              var myObj = this.responseText;
              var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
-             document.getElementById(elementID).innerHTML = jsonPretty;
+             document.getElementById("demon").innerHTML = jsonPretty;
         }
     };
     xmlhttp.open("GET",url, true);
