@@ -8,7 +8,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("demo").innerHTML = jsonPretty;
     }
 };
-xmlhttp.open("GET", url, true);
+xmlhttp.open("GET", "https://bitcoin.mubiz.com/blocks", true);
 xmlhttp.send();
 }
 
