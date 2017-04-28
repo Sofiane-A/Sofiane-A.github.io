@@ -1,6 +1,6 @@
 
 window.homePageLoading = function () {
-     url = "https://api.blockcypher.com/v1/btc/main";
+     url = "https://bitcoin.mubiz.com/blocks";
     elementID = "https://sofiane-a.github.io/bitcoin/index.html";
     var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
