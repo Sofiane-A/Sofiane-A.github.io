@@ -12,8 +12,9 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
-function homePageLoading(url) 
+function homePageLoading() 
 {
-    elementID = "https://sofiane-a.github.io/bitcoin/index.html";
+    var request = document.getElementById("search").value;
+    elementID = "https://sofiane-a.github.io/bitcoin/explorer/index.html";
     fonctionRequeteApi(url, elementID);
 }
