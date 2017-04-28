@@ -12,9 +12,9 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
-function homePageLoading() 
+function homePageLoading(url) 
 {
-    var url = document.getElementById("search").value;
-    elementID = "https://sofiane-a.github.io/bitcoin/explorer/index.html";
-    fonctionRequeteApi('https://api.blockcypher.com/v1/btc/main/blocks/294322?txstart=1&limit=1', elementID);
+    //var url = document.getElementById("search").value;
+    elementID = "https://sofiane-a.github.io/bitcoin/index.html";
+    fonctionRequeteApi(url, elementID);
 }
