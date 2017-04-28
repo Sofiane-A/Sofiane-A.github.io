@@ -29,7 +29,18 @@
 		<h2>Sofiane AYACHE</h2>
 		<h2>Explorateur Bitcoin</h2>
 	</body>
-	<script src="https://bitcoin.mubiz.com/blocks"></script>
+	<script>
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+    		if (this.readyState == 4 && this.status == 200) {
+       	 var myObj = this.responseText;
+        var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
+        document.getElementById("demo").innerHTML = jsonPretty;
+    }
+};
+xmlhttp.open("GET", "https://bitcoin.mubiz.com/blocks", true);
+xmlhttp.send();
+	</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="../custom.js"></script>
 </html>
