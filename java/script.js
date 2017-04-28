@@ -12,9 +12,8 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
-function homePageLoading(url) 
+function homePageLoading(url,elementID) 
 {
     //var url = document.getElementById("search").value;
-    elementID = "https://sofiane-a.github.io/bitcoin/index.html";
     fonctionRequeteApi(url, elementID);
 }
