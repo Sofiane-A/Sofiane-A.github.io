@@ -1,4 +1,4 @@
- function fonctionRequeteApi(url,elementID)
+function fonctionRequeteApi(url,elementID)
 {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() 
@@ -7,7 +7,7 @@
         {
              var myObj = this.responseText;
              var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
-             document.getElementById("demon").innerHTML = jsonPretty;
+             document.getElementById("demo").innerHTML = jsonPretty;
         }
     };
     xmlhttp.open("GET",url, true);
