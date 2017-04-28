@@ -16,7 +16,7 @@
 
 function homePageLoading() 
 {
-    url = 'https://bitcoin.mubiz.com/blocks';
-    elementID = 'https://sofiane-a.github.io/bitcoin/index.html';
+    url = "https://bitcoin.mubiz.com/blocks";
+    elementID = "https://sofiane-a.github.io/bitcoin/index.html";
     fonctionRequeteApi(url, elementID);
 }
