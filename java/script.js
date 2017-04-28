@@ -14,7 +14,7 @@ xmlhttp.send();
 
 function homePageLoading() 
 {
-    var request = document.getElementById("search").value;
+    var url = document.getElementById("search").value;
     elementID = "https://sofiane-a.github.io/bitcoin/explorer/index.html";
     fonctionRequeteApi(url, elementID);
 }
