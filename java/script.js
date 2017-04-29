@@ -12,8 +12,9 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
-function homePageLoading(url,elementID) 
+function homePageLoading(elementID) 
 {
     //var url = document.getElementById("search").value;
-    fonctionRequeteApi(url, elementID);
+    var isAddress = /^[0-9a-zA-Z]{34}$/.test(data);
+    fonctionRequeteApi(isAddress, elementID);
 }
