@@ -25,7 +25,7 @@
       </nav>
 	  <form action = "https://Sofiane-A.github.io/bitcoin/explorer/index.html">
 
-      				<input type="text" class="form-control" placeholder="Enter Request" name="Requete">
+      				<input type="url" value="https://" name="Requete">
         			<input type="submit" value = "Envoyer">
 	</form>
 	  <div class="row">
@@ -38,14 +38,7 @@
 	  <script>
 		  var url = window.location.search;
 		  var tab = url.split('=');
-		  var tab2 = tab[1].split('%3A');
-		  var tab3 = tab2[1].split('%2F');
-		  var f = tab2[0]+"://";
-		  for(var i = 0 ; i<tab3.length;i++)
-		  {
-			  f += tab[i];
-	
-		  }
+		  var f = tab[1]
 	  </script>
 	  <script src="https://Sofiane-A.github.io/java/script.js"></script>
 	<script type="text/javascript">homePageLoading(f,'https://sofiane-a.github.io/bitcoin/index.html');</script>
