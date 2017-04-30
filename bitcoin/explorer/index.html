@@ -38,7 +38,8 @@
 	  <script>
 		  var url = window.location.search;
 		  var tab = url.split('=');
-		  var f = tab[1]
+		  var tab2= tab[1].split('%3A');
+		  var f = tab2[0] + ':' + tab2[1];
 	  </script>
 	  <script src="https://Sofiane-A.github.io/java/script.js"></script>
 	<script type="text/javascript">homePageLoading(f,'https://sofiane-a.github.io/bitcoin/index.html');</script>
