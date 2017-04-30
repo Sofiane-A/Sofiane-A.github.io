@@ -12,7 +12,7 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 }
 
-function homePageLoading(elementID) 
+function homePageLoading(Requete,elementID) 
 {
     
     //var url = document.getElementById("search").value;
