@@ -36,18 +36,18 @@
 	</div>
 </div>
 	  <script>
-		  function UrlParams(){	
-	          var t = location.search.substring(1).split('&');
-	           var f = [];
-	for (var i=0; i<t.length; i++){
-		var x = t[ i ].split('=');
-		f[x[0]]=x[1];
-	}
-	return f;
-        }
+		  var url = window.location.search;
+		  var tab = url.split('=');
+		  var tab2 = tab[1].split('%3A');
+		  var tab3 = tab2[1].split('%2F');
+		  var f = tab2[0]+"://";
+		  for(var i = 0 ; i<tab3.length;i++)
+		  {
+			  f += tab[i];
+	
+		  }
 	  </script>
-	<script src="https://Sofiane-A.github.io/java/script.js"></script>
-	<script type="text/javascript">homePageLoading(UrlParams(),'https://sofiane-a.github.io/bitcoin/index.html');</script>
+	<script type="text/javascript">homePageLoading(f,'https://sofiane-a.github.io/bitcoin/index.html');</script>
 	
 	 
   </body>
